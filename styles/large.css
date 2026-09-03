@@ -1,0 +1,110 @@
+/* =================================
+   TABLET AND DESKTOP
+================================= */
+
+@media screen and (min-width: 768px) {
+
+    /* ==============================
+       HEADER
+    ============================== */
+
+    header {
+        display: flex;
+
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0.8rem max(2rem, calc((100% - 1100px) / 2));
+    }
+
+    .header-top {
+        padding: 0;
+    }
+
+
+    /* Hide hamburger */
+
+    .menu-button {
+        display: none;
+    }
+
+
+    /* ==============================
+       NAVIGATION
+    ============================== */
+
+    nav {
+        display: flex;
+
+        align-items: center;
+
+        gap: 0.25rem;
+    }
+
+    nav a {
+        border: none;
+
+        padding: 0.7rem 1rem;
+
+        border-radius: 5px;
+    }
+
+
+    /* ==============================
+       MAIN
+    ============================== */
+
+    main {
+        padding-top: 2rem;
+    }
+
+
+    /* ==============================
+       TWO-COLUMN LAYOUT
+    ============================== */
+
+    .top-sections {
+        grid-template-columns: 2fr 1fr;
+
+        align-items: stretch;
+    }
+
+
+    /* ==============================
+       COURSE GRID
+    ============================== */
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .course-card {
+        min-height: 120px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        align-items: center;
+    }
+
+}
+
+
+/* =================================
+   LARGE DESKTOP
+================================= */
+
+@media screen and (min-width: 1000px) {
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}

@@ -1,0 +1,453 @@
+/* ==============================
+   GENERAL
+============================== */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #17324d;
+    --secondary-color: #246a73;
+    --accent-color: #f2b134;
+    --background-color: #f4f7f8;
+    --card-color: #ffffff;
+    --text-color: #1e2933;
+    --border-color: #cbd5dc;
+    --completed-color: #dcefe4;
+    --completed-border: #32704d;
+}
+
+html {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ==============================
+   HEADER
+============================== */
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.header-top {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0.8rem 1rem;
+}
+
+.logo-link {
+    display: flex;
+
+    align-items: center;
+
+    gap: 0.7rem;
+
+    color: white;
+    text-decoration: none;
+
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.logo-link img {
+    width: 55px;
+    height: 55px;
+}
+
+
+/* ==============================
+   HAMBURGER
+============================== */
+
+.menu-button {
+    border: none;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    padding: 0.25rem 0.5rem;
+}
+
+.menu-button:hover,
+.menu-button:focus-visible {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+
+/* ==============================
+   NAVIGATION
+============================== */
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: flex;
+
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 0.9rem 1rem;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus-visible,
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+
+/* ==============================
+   MAIN
+============================== */
+
+main {
+    width: min(100% - 2rem, 1100px);
+
+    margin: 0 auto;
+
+    padding: 1.5rem 0 2rem;
+}
+
+h1 {
+    margin: 0 0 1rem;
+
+    color: var(--primary-color);
+
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+}
+
+h2 {
+    margin: 0;
+
+    padding: 0.7rem 1rem;
+
+    background-color: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 1rem;
+}
+
+
+/* ==============================
+   SECTIONS
+============================== */
+
+.top-sections {
+    display: grid;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.card {
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+.section-content p {
+    margin-top: 0;
+}
+
+.section-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==============================
+   STUDENT PHOTO
+============================== */
+
+.photo-container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+
+.photo-container img {
+    width: 100%;
+
+    max-width: 400px;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+
+/* ==============================
+   COURSE SECTION
+============================== */
+
+.certificate-section {
+    padding-bottom: 1rem;
+}
+
+
+/* ==============================
+   FILTER BUTTONS
+============================== */
+
+.filter-buttons {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0.5rem;
+
+    padding: 1rem;
+}
+
+.filter {
+    border: 2px solid var(--primary-color);
+
+    border-radius: 6px;
+
+    background-color: white;
+
+    color: var(--primary-color);
+
+    padding: 0.7rem 0.5rem;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.filter:hover,
+.filter:focus-visible,
+.filter.active {
+    background-color: var(--accent-color);
+
+    color: #111111;
+}
+
+
+/* ==============================
+   COURSE CARDS
+============================== */
+
+.course-list {
+    display: grid;
+
+    gap: 0.6rem;
+
+    padding: 0 1rem;
+}
+
+.course-card {
+    padding: 0.8rem;
+
+    background-color: #f7f9fa;
+
+    border: 2px solid var(--border-color);
+
+    border-radius: 6px;
+
+    text-align: center;
+}
+
+.course-code {
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 1.05rem;
+
+    font-weight: 700;
+}
+
+.course-title {
+    display: block;
+
+    margin-top: 0.2rem;
+
+    color: var(--text-color);
+
+    font-size: 0.85rem;
+}
+
+.course-credits {
+    display: block;
+
+    margin-top: 0.2rem;
+
+    color: #52616b;
+
+    font-size: 0.8rem;
+}
+
+
+/* Completed courses */
+
+.course-card.completed {
+    background-color: var(--completed-color);
+
+    border-color: var(--completed-border);
+}
+
+.course-card.completed .course-code {
+    color: #1f5b3a;
+}
+
+.completed-label {
+    display: inline-block;
+
+    margin-top: 0.35rem;
+
+    padding: 0.15rem 0.45rem;
+
+    border-radius: 4px;
+
+    background-color: #32704d;
+
+    color: white;
+
+    font-size: 0.72rem;
+
+    font-weight: 600;
+}
+
+
+/* ==============================
+   CREDIT TOTAL
+============================== */
+
+.credit-total {
+    margin: 1rem;
+
+    text-align: center;
+
+    font-weight: 600;
+}
+
+
+/* ==============================
+   FOOTER
+============================== */
+
+footer {
+    background-color: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem 1rem;
+}
+
+.social-links {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+    background-color: var(--secondary-color);
+}
+
+.social-icon {
+    font-size: 1.6rem;
+
+    font-weight: 700;
+}
+
+.github-icon {
+    font-size: 1.4rem;
+}
+
+.x-icon {
+    font-size: 1.8rem;
+}
+
+footer p {
+    margin: 0.4rem 0;
+
+    font-size: 0.9rem;
+}
