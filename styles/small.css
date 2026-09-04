@@ -213,22 +213,15 @@ h2 {
 
 .photo-container {
     display: flex;
-
     justify-content: center;
     align-items: center;
-
     padding: 1rem;
 }
 
 .photo-container img {
     width: 100%;
-
     max-width: 400px;
-
-    aspect-ratio: 1 / 1;
-
     object-fit: cover;
-
     border-radius: 6px;
 }
 
