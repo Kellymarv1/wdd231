@@ -9,8 +9,8 @@
     ================================= */
 
     header {
-        background-color: white;
-        color: var(--text-color);
+        background-color: var(--primary-color);
+        color: white;
         max-width: 1100px;
         margin: 0 auto;
     }
@@ -23,7 +23,7 @@
     }
 
     .logo-area {
-        color: var(--primary-color);
+        color: white;
     }
 
     .logo-area img {
