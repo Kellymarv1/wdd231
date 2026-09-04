@@ -15,7 +15,7 @@
         margin: 0 auto;
     }
 
-    .header-content {
+    .header-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
