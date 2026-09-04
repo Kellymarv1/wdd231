@@ -1,85 +1,183 @@
-/* =================================
-   TABLET AND DESKTOP
-================================= */
+/* =====================================
+   LARGE SCREEN - 768px AND ABOVE
+===================================== */
 
 @media screen and (min-width: 768px) {
 
-    /* ==============================
+    /* ================================
        HEADER
-    ============================== */
+    ================================= */
 
     header {
-        display: flex;
+        background-color: white;
+        color: var(--text-color);
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
+    .header-content {
+        display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 0.8rem max(2rem, calc((100% - 1100px) / 2));
+        padding: 1rem 1.5rem;
     }
 
-    .header-top {
-        padding: 0;
+    .logo-area {
+        color: var(--primary-color);
     }
 
+    .logo-area img {
+        width: 70px;
+        height: 70px;
+    }
 
-    /* Hide hamburger */
+    /* Hide hamburger on desktop */
 
     .menu-button {
         display: none;
     }
 
 
-    /* ==============================
+    /* ================================
        NAVIGATION
-    ============================== */
+    ================================= */
 
     nav {
         display: flex;
-
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
 
-        gap: 0.25rem;
+        width: 100%;
+
+        background-color: var(--primary-color);
     }
 
     nav a {
-        border: none;
+        display: block;
 
-        padding: 0.7rem 1rem;
+        color: white;
 
-        border-radius: 5px;
+        text-decoration: none;
+
+        padding: 0.9rem 1.5rem;
+
+        border-top: none;
+    }
+
+    nav a:hover,
+    nav a:focus-visible {
+        background-color: var(--secondary-color);
+    }
+
+    nav a.active {
+        background-color: var(--secondary-color);
     }
 
 
-    /* ==============================
+    /* ================================
        MAIN
-    ============================== */
+    ================================= */
 
     main {
-        padding-top: 2rem;
+        width: 100%;
+        max-width: 1100px;
+
+        margin: 0 auto;
+
+        padding: 1.5rem 0 2rem;
     }
 
 
-    /* ==============================
-       TWO-COLUMN LAYOUT
-    ============================== */
+    /* ================================
+       ABOUT ME + PHOTO
+    ================================= */
 
-    .top-sections {
+    .home-grid {
+        display: grid;
+
         grid-template-columns: 2fr 1fr;
 
-        align-items: stretch;
+        gap: 1rem;
+
+        margin-bottom: 1rem;
     }
 
 
-    /* ==============================
-       COURSE GRID
-    ============================== */
+    /* ================================
+       CARDS
+    ================================= */
+
+    .home-grid .card {
+        min-height: 280px;
+    }
+
+
+    /* ================================
+       PHOTO
+    ================================= */
+
+    .photo-container {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        height: calc(100% - 48px);
+
+        padding: 1rem;
+    }
+
+    .photo-container img {
+        width: 280px;
+        height: 21.2rem;
+
+        object-fit: cover;
+
+        border-radius: 6px;
+    }
+
+
+    /* ================================
+       CERTIFICATE
+    ================================= */
+
+    .certificate {
+        width: 100%;
+    }
+
+
+    /* ================================
+       COURSE FILTER BUTTONS
+    ================================= */
+
+    .filter-buttons {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 0.6rem;
+
+        padding: 1rem;
+    }
+
+
+    /* ================================
+       COURSE CARDS
+    ================================= */
 
     .course-list {
+        display: grid;
+
         grid-template-columns: repeat(3, 1fr);
+
+        gap: 0.6rem;
+
+        padding: 0 1rem;
     }
 
     .course-card {
-        min-height: 120px;
+        min-height: 110px;
 
         display: flex;
 
@@ -88,23 +186,39 @@
         justify-content: center;
 
         align-items: center;
+
+        text-align: center;
     }
 
+
+    /* ================================
+       FOOTER
+    ================================= */
+
+    footer {
+        width: 100%;
+    }
 }
 
 
-/* =================================
-   LARGE DESKTOP
-================================= */
+/* =====================================
+   VERY LARGE SCREENS
+===================================== */
 
 @media screen and (min-width: 1000px) {
 
-    h1 {
-        font-size: 2.4rem;
+    header,
+    main {
+        max-width: 1100px;
     }
 
-    .course-list {
-        grid-template-columns: repeat(3, 1fr);
+    .header-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
     }
 
 }
