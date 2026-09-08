@@ -438,3 +438,7 @@ footer p {
 
     font-size: 0.9rem;
 }
+
+.social-links img {
+    filter: brightness(0) invert(1);
+}
