@@ -139,7 +139,7 @@ main h1 {
    border: 3px solid var(--primary-color);
 }
 
-#memberContainer.grid .member-card h3 {
+#memberContainer.grid .member-card h2 {
    margin: 0 0 0.5rem;
    color: var(--primary-color);
    font-size: 1.2rem;
@@ -198,7 +198,7 @@ main h1 {
    flex-wrap: wrap;
 }
 
-#memberContainer.list .member-info h3 {
+#memberContainer.list .member-info h2 {
    margin: 0;
    font-size: 1rem;
    color: var(--primary-color);
@@ -232,13 +232,13 @@ footer {
 }
 
 .footer-col p, 
-.footer-col h3 {
+.footer-col h2 {
    margin: 0.3rem 0;
    font-size: 0.9rem;
    color: white;
 }
 
-.footer-col h3 {
+.footer-col h2 {
    font-size: 1rem;
    font-weight: 600;
 }
