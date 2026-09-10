@@ -1,12 +1,12 @@
 @media screen and (min-width: 768px) {
    
    /* Header Desktop Adjustments */
-   header {
-       background-color: white;
-   }
-
+  header {
+    background-color: var(--primary-color);
+    color: white;
+}
    .logo-area {
-       color: var(--primary-color); /* Dark text on white desktop header */
+       color: white; /* Dark text on white desktop header */
    }
 
    .menu-button {
@@ -14,7 +14,7 @@
    }
 
    nav {
-       display: flex !important;
+       display: flex;
        flex-direction: row;
        justify-content: flex-end;
        background-color: white;
