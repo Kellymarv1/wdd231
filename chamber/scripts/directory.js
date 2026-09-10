@@ -38,7 +38,7 @@ function displayMembers(members) {
        card.innerHTML = `
            <img src="images/${member.image}" alt="Logo of ${member.name}" loading="lazy">
            <div class="member-info">
-               <h3>${member.name}</h3>
+               <h2>${member.name}</h2>
                <p class="membership-level">${levelText}</p>
                <p><strong>Address:</strong> ${member.address}</p>
                <p><strong>Phone:</strong> ${member.phone}</p>
