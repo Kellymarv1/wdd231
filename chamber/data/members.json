@@ -1,0 +1,65 @@
+[
+ {
+   "name": "Apex Tech Solutions",
+   "address": "123 Innovation Way, Tech City",
+   "phone": "+234 801 234 5678",
+   "website": "https://apextech.example.com",
+   "image": "apex.jpg",
+   "membershipLevel": 3,
+   "description": "Providing top-tier software engineering and cloud infrastructure services."
+ },
+ {
+   "name": "GreenLeaf Organic Foods",
+   "address": "45 Market Street, Agro Hub",
+   "phone": "+234 802 345 6789",
+   "website": "https://greenleaf.example.com",
+   "image": "greenleaf.jpg",
+   "membershipLevel": 2,
+   "description": "Fresh, locally sourced organic produce delivered straight to your doorstep."
+ },
+ {
+   "name": "Metro Logistics & Transport",
+   "address": "78 Expressway, Central District",
+   "phone": "+234 803 456 7890",
+   "website": "https://metrologistics.example.com",
+   "image": "metro.jpg",
+   "membershipLevel": 1,
+   "description": "Fast, reliable freight and delivery services across the region."
+ },
+ {
+   "name": "Summit Financial Partners",
+   "address": "10 Banking Plaza, Financial Zone",
+   "phone": "+234 804 567 8901",
+   "website": "https://summitfin.example.com",
+   "image": "summit.jpg",
+   "membershipLevel": 3,
+   "description": "Expert financial planning, accounting, and investment advisory."
+ },
+ {
+   "name": "Beacon Media Group",
+   "address": "12 Creative Avenue, Media City",
+   "phone": "+234 805 678 9012",
+   "website": "https://beaconmedia.example.com",
+   "image": "beacon.jpg",
+   "membershipLevel": 2,
+   "description": "Digital marketing, branding, and commercial video production."
+ },
+ {
+   "name": "Pioneer Construction Ltd",
+   "address": "90 Builder Road, Industrial Estate",
+   "phone": "+234 806 789 0123",
+   "website": "https://pioneerconst.example.com",
+   "image": "pioneer.jpg",
+   "membershipLevel": 1,
+   "description": "Quality civil engineering, building construction, and project management."
+ },
+ {
+   "name": "Nova Health Clinic",
+   "address": "15 Wellness Blvd, Health District",
+   "phone": "+234 807 890 1234",
+   "website": "https://novahealth.example.com",
+   "image": "nova.jpg",
+   "membershipLevel": 3,
+   "description": "Comprehensive healthcare services with state-of-the-art diagnostic facilities."
+ }
+]

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Timbuktu Chamber of Commerce Member Directory featuring local businesses, organizations, and community partners.">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+
+   <!-- Facebook Open Graph Meta Tags -->
+   <meta property="og:title" content="Chamber Directory | WDD 231">
+   <meta property="og:description" content="Browse local businesses and community members in our chamber directory.">
+   <meta property="og:image" content="https://example.com/images/chamber-hero.jpg">
+   <meta property="og:url" content="https://example.com/chamber/directory.html">
+
+   <title>Member Directory | Timbuktu Chamber of Commerce</title>
+
+   <!-- Favicon -->
+   <link rel="icon" href="images/favicon.ico">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- CSS Styles -->
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/small.css">
+   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+
+   <!-- JavaScript -->
+   <script src="scripts/navigation.js" defer></script>
+   <script src="scripts/date.js" defer></script>
+   <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+
+   <header>
+       <div class="header-top">
+           <div class="logo-area">
+               <img src="images/logo.svg" alt="Timbuktu Chamber Logo">
+               <span>Timbuktu Chamber</span>
+           </div>
+           <button id="menuButton" class="menu-button" aria-label="Open navigation menu">☰</button>
+       </div>
+       <nav id="primaryNav">
+           <a href="index.html">Home</a>
+           <a href="directory.html" class="active">Directory</a>
+           <a href="join.html">Join</a>
+           <a href="discover.html">Discover</a>
+       </nav>
+   </header>
+
+   <main>
+       <h1>Directory</h1>
+
+       <!-- Grid and List View Toggle Buttons -->
+       <div class="view-toggle">
+           <button id="gridButton" class="view-btn active" aria-label="Grid View">Grid</button>
+           <button id="listButton" class="view-btn" aria-label="List View">List</button>
+       </div>
+
+       <!-- Dynamic Member Container -->
+       <section id="memberContainer" class="grid">
+           <!-- Member cards/list items will be injected here via JavaScript -->
+       </section>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <!-- Left Section: Chamber Info -->
+           <div class="footer-col chamber-details">
+               <h3>Timbuktu Chamber of Commerce</h3>
+               <p>10 Rue De La Paix</p>
+               <p>Timbuktu, Mali 999</p>
+               <p>info@timbuktucc.org</p>
+               <p>(223) 555-2300</p>
+           </div>
+
+           <!-- Middle Section: Social Icons -->
+           <div class="footer-col social-links">
+               <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                   <img src="images/youtube.svg" alt="YouTube icon">
+               </a>
+               <a href="https://x.com" target="_blank" rel="noopener noreferrer" aria-label="X">
+                   <img src="images/x.svg" alt="X icon">
+               </a>
+               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                   <img src="images/linkedin.svg" alt="LinkedIn icon">
+               </a>
+           </div>
+
+           <!-- Right Section: Project & Student Info -->
+           <div class="footer-col project-details">
+               <p><strong>WDD231 Class Project</strong></p>
+               <p>Kehinde Marvellous Kehinde</p>
+               <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+               <p class="highlight">Last Modification: <span id="lastmodified"></span></p>
+           </div>
+       </div>
+   </footer>
+
+</body>
+</html>
