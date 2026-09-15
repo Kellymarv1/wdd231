@@ -249,8 +249,12 @@ footer {
    gap: 1rem;
 }
 
-.social-links img, .logo-area img {
+.social-links img {
    width: 32px;
    height: 32px;
    filter: brightness(0) invert(1); /* Turns icons white for high contrast */
+}
+
+.logo-area {
+   filter: brightness(0) invert(1); /* Ensures logo is visible on dark background */
 }
