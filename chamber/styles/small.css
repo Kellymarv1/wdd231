@@ -231,16 +231,17 @@ footer {
    margin: 0 auto;
 }
 
-.footer-col p, 
-.footer-col h2 {
+.footer-col p {
    margin: 0.3rem 0;
    font-size: 0.9rem;
    color: white;
 }
 
 .footer-col h2 {
-   font-size: 1rem;
    font-weight: 600;
+   margin: 0.3rem 0;
+   font-size: 0.9rem;
+   color: white;
 }
 
 .social-links {
@@ -255,6 +256,6 @@ footer {
    filter: brightness(0) invert(1); /* Turns icons white for high contrast */
 }
 
-.logo-area {
+.logo-area img {
    filter: brightness(0) invert(1); /* Ensures logo is visible on dark background */
 }
