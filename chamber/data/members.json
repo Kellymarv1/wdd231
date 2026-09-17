@@ -4,7 +4,7 @@
    "address": "123 Innovation Way, Tech City",
    "phone": "+234 801 234 5678",
    "website": "https://apextech.example.com",
-   "image": "apex.jpg",
+   "image": "apex.svg",
    "membershipLevel": 3,
    "description": "Providing top-tier software engineering and cloud infrastructure services."
  },
@@ -13,7 +13,7 @@
    "address": "45 Market Street, Agro Hub",
    "phone": "+234 802 345 6789",
    "website": "https://greenleaf.example.com",
-   "image": "greenleaf.jpg",
+   "image": "greenleaf.svg",
    "membershipLevel": 2,
    "description": "Fresh, locally sourced organic produce delivered straight to your doorstep."
  },
@@ -22,7 +22,7 @@
    "address": "78 Expressway, Central District",
    "phone": "+234 803 456 7890",
    "website": "https://metrologistics.example.com",
-   "image": "metro.jpg",
+   "image": "metro.svg",
    "membershipLevel": 1,
    "description": "Fast, reliable freight and delivery services across the region."
  },
@@ -31,7 +31,7 @@
    "address": "10 Banking Plaza, Financial Zone",
    "phone": "+234 804 567 8901",
    "website": "https://summitfin.example.com",
-   "image": "summit.jpg",
+   "image": "summit.svg",
    "membershipLevel": 3,
    "description": "Expert financial planning, accounting, and investment advisory."
  },
@@ -40,7 +40,7 @@
    "address": "12 Creative Avenue, Media City",
    "phone": "+234 805 678 9012",
    "website": "https://beaconmedia.example.com",
-   "image": "beacon.jpg",
+   "image": "beacon.svg",
    "membershipLevel": 2,
    "description": "Digital marketing, branding, and commercial video production."
  },
@@ -49,7 +49,7 @@
    "address": "90 Builder Road, Industrial Estate",
    "phone": "+234 806 789 0123",
    "website": "https://pioneerconst.example.com",
-   "image": "pioneer.jpg",
+   "image": "pioneer.svg",
    "membershipLevel": 1,
    "description": "Quality civil engineering, building construction, and project management."
  },
@@ -58,7 +58,7 @@
    "address": "15 Wellness Blvd, Health District",
    "phone": "+234 807 890 1234",
    "website": "https://novahealth.example.com",
-   "image": "nova.jpg",
+   "image": "nova.svg",
    "membershipLevel": 3,
    "description": "Comprehensive healthcare services with state-of-the-art diagnostic facilities."
  }

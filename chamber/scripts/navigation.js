@@ -14,4 +14,16 @@ if (menuButton && primaryNav) {
            menuButton.setAttribute("aria-label", "Open navigation menu");
        }
    });
+
+// Automatically highlight the active navigation link based on the current URL
+const navLinks = document.querySelectorAll('nav a');
+const currentUrl = window.location.href;
+
+navLinks.forEach(link => {
+   if (link.href === currentUrl) {
+       link.classList.add('active');
+   }
+});
+
 }
+
