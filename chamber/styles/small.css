@@ -316,6 +316,12 @@ main h1 {
   margin-bottom: 1.2rem;
 }
 
+#weatherIcon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
 .temp-display {
   font-size: 1.5rem;
   font-weight: 700;
