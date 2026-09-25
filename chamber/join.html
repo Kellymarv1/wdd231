@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Chamber of Commerce Membership Application Form">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+   <title>Membership Join | Timbuktu Chamber of Commerce</title>
+   
+   <link rel="icon" href="images/favicon.ico">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/small.css">
+   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+   <link rel="stylesheet" href="styles/join.css">
+
+   <script src="scripts/navigation.js" defer></script>
+   <script src="scripts/join.js" defer></script>
+</head>
+<body>
+   <header>
+       <div class="header-top">
+           <a href="index.html" class="logo-area">
+               <img src="images/logo.svg" alt="Chamber Logo">
+               <span>Timbuktu Chamber</span>
+           </a>
+           <button class="menu-button">☰</button>
+       </div>
+       <nav>
+           <a href="index.html">Home</a>
+           <a href="directory.html">Directory</a>
+           <a href="join.html" class="active">Join</a>
+           <a href="discover.html">Discover</a>
+       </nav>
+   </header>
+
+   <main>
+       <h1>Membership Application</h1>
+       
+       <div class="join-container">
+           <!-- Form -->
+           <form method="get" action="thankyou.html" class="join-form">
+               <label>First Name *
+                   <input type="text" name="first" title="First Name" autocomplete="given-name" required>
+               </label>
+
+               <label>Last Name *
+                   <input type="text" name="last" title="Last Name" autocomplete="family-name" required>
+               </label>
+
+               <label>Organizational Title
+                   <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+               </label>
+
+               <label>Email Address *
+                   <input type="email" name="email" title="Email Address" autocomplete="email" placeholder="name@domain.com" required>
+               </label>
+
+               <label>Mobile Phone Number *
+                   <input type="tel" name="phone" title="Phone Number" autocomplete="tel" required>
+               </label>
+
+               <label>Business/Organization Name *
+                   <input type="text" name="organization" title="Organization Name" autocomplete="organization" required>
+               </label>
+
+               <label>Membership Level *
+                   <select name="membership" required>
+                       <option value="" disabled selected>Choose a Membership Level</option>
+                       <option value="np">NP Membership (Non-Profit - No Fee)</option>
+                       <option value="bronze">Bronze Membership</option>
+                       <option value="silver">Silver Membership</option>
+                       <option value="gold">Gold Membership</option>
+                   </select>
+               </label>
+
+               <label>Business Description
+                   <textarea name="description" title="Description"></textarea>
+               </label>
+
+               <!-- Hidden Timestamp -->
+               <input type="hidden" id="timestamp" name="timestamp">
+
+               <input type="submit" value="Apply" class="submit-btn">
+           </form>
+
+           <!-- Membership Cards -->
+           <aside class="cards-container">
+               <section class="membership-card animate-card">
+                   <h3>NP Membership</h3>
+                   <button type="button" class="info-link" id="np-btn">Card Details</button>
+               </section>
+               <section class="membership-card animate-card">
+                   <h3>Bronze Membership</h3>
+                   <button type="button" class="info-link" id="bronze-btn">Card Details</button>
+               </section>
+               <section class="membership-card animate-card">
+                   <h3>Silver Membership</h3>
+                   <button type="button" class="info-link" id="silver-btn">Card Details</button>
+               </section>
+               <section class="membership-card animate-card">
+                   <h3>Gold Membership</h3>
+                   <button type="button" class="info-link" id="gold-btn">Card Details</button>
+               </section>
+           </aside>
+       </div>
+
+       <!-- Modals -->
+       <dialog id="np-modal">
+           <h2>NP Membership</h2>
+           <p>For non-profit organizations with no membership fee. Includes basic directory listing.</p>
+           <button type="button" class="close-modal">Close</button>
+       </dialog>
+
+       <dialog id="bronze-modal">
+           <h2>Bronze Membership</h2>
+           <p>Includes standard directory entry and access to general chamber meetings.</p>
+           <button type="button" class="close-modal">Close</button>
+       </dialog>
+
+       <dialog id="silver-modal">
+           <h2>Silver Membership</h2>
+           <p>Includes priority directory placement, event discounts, and spotlight opportunities.</p>
+           <button type="button" class="close-modal">Close</button>
+       </dialog>
+
+       <dialog id="gold-modal">
+           <h2>Gold Membership</h2>
+           <p>Includes premium homepage spotlight positioning, free event access, and maximum visibility.</p>
+           <button type="button" class="close-modal">Close</button>
+       </dialog>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <div class="footer-col">
+               <h2>Timbuktu Chamber</h2>
+               <p>104 West Street, Timbuktu</p>
+               <p>info@timbuktucc.org</p>
+           </div>
+           <div class="social-links">
+               <a href="https://youtube.com" target="_blank" rel="noopener"><img src="images/youtube.svg" alt="YouTube"></a>
+               <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/x-twitter.svg" alt="Twitter"></a>
+               <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+           </div>
+           <div class="footer-col project-details">
+               <p>WDD 231 Class Project</p>
+               <p>Kehinde Marvellous Kehinde</p>
+               <p>&copy; <span id="currentyear"></span> Timbuktu Chamber</p>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
