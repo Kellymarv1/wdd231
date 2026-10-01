@@ -1,0 +1,33 @@
+/* ==========================================
+  MEDIA QUERY FOR LARGE VIEWPORTS (DESKTOP)
+  ================================---------- */
+@media screen and (min-width: 768px) {
+   body {
+       padding: 30px;
+   }
+
+   main {
+       padding: 2.5rem;
+   }
+
+   /* Color swatches side-by-side on desktop */
+   .color-palette {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+
+   .color-box {
+       flex: 1;
+   }
+
+   /* Wireframe cards side-by-side on desktop */
+   .wireframe-container {
+       flex-direction: row;
+       justify-content: space-between;
+       gap: 20px;
+   }
+
+   .wireframe-card {
+       flex: 1;
+   }
+}

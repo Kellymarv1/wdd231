@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+ <!-- Monitor Outline -->
+ <rect x="10" y="10" width="580" height="360" rx="8" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+ <!-- Header -->
+ <rect x="25" y="25" width="550" height="40" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
+ <text x="40" y="50" font-family="sans-serif" font-size="12" fill="#475569">Logo</text>
+ <text x="420" y="50" font-family="sans-serif" font-size="11" fill="#475569">Home | Pets | Volunteer</text>
+ <!-- Hero -->
+ <rect x="25" y="75" width="550" height="90" rx="4" fill="#f1f5f9" stroke="#cbd5e1"/>
+ <text x="210" y="125" font-family="sans-serif" font-size="13" fill="#475569">Wide Hero Banner &amp; Welcome Message</text>
+ <!-- 3 Columns for Pets -->
+ <rect x="25" y="180" width="170" height="110" rx="4" fill="#f8fafc" stroke="#cbd5e1"/>
+ <text x="60" y="240" font-family="sans-serif" font-size="11" fill="#64748b">Pet Card 1</text>
+ 
+ <rect x="215" y="180" width="170" height="110" rx="4" fill="#f8fafc" stroke="#cbd5e1"/>
+ <text x="250" y="240" font-family="sans-serif" font-size="11" fill="#64748b">Pet Card 2</text>
+ 
+ <rect x="405" y="180" width="170" height="110" rx="4" fill="#f8fafc" stroke="#cbd5e1"/>
+ <text x="440" y="240" font-family="sans-serif" font-size="11" fill="#64748b">Pet Card 3</text>
+ <!-- Footer -->
+ <rect x="25" y="305" width="550" height="50" rx="4" fill="#e2e8f0" stroke="#cbd5e1"/>
+ <text x="215" y="335" font-family="sans-serif" font-size="11" fill="#475569">Footer / Social Links / Hours</text>
+</svg>

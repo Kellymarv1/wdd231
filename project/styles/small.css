@@ -1,0 +1,126 @@
+/* ==========================================
+  SAFE HAVEN ANIMAL SHELTER - SITE PLAN CSS
+  ================================---------- */
+
+/* CSS Variables for Color Scheme */
+:root {
+   --primary-color: #2E6F7F;   /* Warm Teal */
+   --accent-color: #E07A5F;    /* Soft Coral */
+   --bg-color: #F9F8F6;        /* Off-White */
+   --text-color: #2B2D42;      /* Charcoal Text */
+   --card-bg: #FFFFFF;         /* White Container Background */
+}
+
+/* Base Body Styles */
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   line-height: 1.6;
+   margin: 0;
+   padding: 15px;
+}
+
+header {
+   background-color: var(--primary-color);
+   color: #FFFFFF;
+   text-align: center;
+   padding: 1.5rem;
+   border-radius: 6px;
+   margin-bottom: 1.5rem;
+}
+
+header h1, header h2 {
+   font-family: 'Poppins', sans-serif;
+   margin: 0 0 8px 0;
+}
+
+main {
+   max-width: 900px;
+   margin: 0 auto;
+   background: var(--card-bg);
+   padding: 1.5rem;
+   border-radius: 6px;
+   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h3 {
+   font-family: 'Poppins', sans-serif;
+   color: var(--primary-color);
+   border-bottom: 2px solid var(--accent-color);
+   padding-bottom: 5px;
+   margin-top: 2rem;
+}
+
+section {
+   margin-bottom: 1.5rem;
+}
+
+ul {
+   padding-left: 20px;
+}
+
+/* Color Scheme Swatches (Stacked on small screens) */
+.color-palette {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.color-box {
+   padding: 12px;
+   border-radius: 4px;
+   color: #fff;
+   font-weight: 500;
+   font-size: 0.9rem;
+}
+
+.color-box span {
+   display: block;
+   font-size: 0.8rem;
+   opacity: 0.9;
+}
+
+.color-box.primary { background-color: var(--primary-color); }
+.color-box.accent { background-color: var(--accent-color); }
+.color-box.background { background-color: #E2DFD8; color: var(--text-color); }
+.color-box.text { background-color: var(--text-color); }
+
+/* Wireframe Images Container */
+.wireframe-container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 15px;
+}
+
+.wireframe-card {
+   background: #fafafa;
+   border: 1px solid #e0e0e0;
+   padding: 15px;
+   border-radius: 6px;
+   text-align: center;
+}
+
+.wireframe-card h4 {
+   margin-top: 0;
+   font-family: 'Poppins', sans-serif;
+   color: var(--text-color);
+}
+
+/* Responsive Wireframe Images */
+.wireframe-card img {
+   max-width: 100%;
+   height: auto;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-top: 10px;
+}
+
+footer {
+   text-align: center;
+   margin-top: 2rem;
+   font-size: 0.85rem;
+   color: #666;
+}
