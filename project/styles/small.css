@@ -60,7 +60,6 @@ ul {
    padding-left: 20px;
 }
 
-/* Color Scheme Swatches (Stacked on small screens) */
 .color-palette {
    display: flex;
    flex-direction: column;
