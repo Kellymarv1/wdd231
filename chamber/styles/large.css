@@ -1,12 +1,11 @@
 @media screen and (min-width: 768px) {
   
-  /* Header Desktop Adjustments */
  header {
    background-color: var(--primary-color);
    color: var(--accent-color);
 }
   .logo-area {
-      color: var(--accent-color); /* Dark text on white desktop header */
+      color: var(--accent-color);
   }
 
   .menu-button {
@@ -72,7 +71,6 @@
       flex-direction: column;
   }
 
-  /* 3-column Footer Layout matching wireframe */
   .footer-content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
