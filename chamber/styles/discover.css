@@ -6,7 +6,7 @@
 
 .visitor-banner {
    background-color: var(--primary-color);
-   color: white;
+   color: var(--accent-color);
    padding: 1rem;
    text-align: center;
    border-radius: 6px;
@@ -40,7 +40,7 @@
 .card-8 { grid-area: card8; }
 
 .discover-grid section {
-   background-color: #ffffff;
+   background-color: var(--accent-color);
    border: 1px solid #cbd5dc;
    border-radius: 8px;
    padding: 1.2rem;
@@ -83,7 +83,7 @@
 
 .discover-grid button {
    background-color: var(--primary-color);
-   color: white;
+   color: var(--accent-color);
    border: none;
    padding: 0.5rem 1rem;
    border-radius: 4px;
