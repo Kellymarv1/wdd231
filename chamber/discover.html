@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Discover Timbuktu Chamber of Commerce area features, demographics, and local points of interest.">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+   <title>Discover | Timbuktu Chamber of Commerce</title>
+   
+   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="styles/normalize.css">
+   <link rel="stylesheet" href="styles/small.css">
+   <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
+   <link rel="stylesheet" href="styles/discover.css">
+
+   <script src="scripts/navigation.js" defer></script>
+   <script src="scripts/discover.js" type="module" defer></script>
+</head>
+<body>
+   <header>
+       <div class="header-top">
+           <a href="index.html" class="logo-area">
+               <img src="images/logo.svg" alt="Chamber Logo">
+               <span>Timbuktu Chamber</span>
+           </a>
+           <button class="menu-button">☰</button>
+       </div>
+       <nav>
+           <a href="index.html">Home</a>
+           <a href="directory.html">Directory</a>
+           <a href="join.html">Join</a>
+           <a href="discover.html" class="active">Discover</a>
+       </nav>
+   </header>
+
+   <main class="discover-main">
+       <h1>Discover Timbuktu</h1>
+       
+       <!-- Visitor Message Area -->
+       <div id="visitorMessage" class="visitor-banner"></div>
+
+       <!-- Dynamic Grid Container -->
+       <div id="discoverGrid" class="discover-grid"></div>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <div class="footer-col">
+               <h2>Timbuktu Chamber</h2>
+               <p>104 West Street, Timbuktu</p>
+               <p>info@timbuktucc.org</p>
+           </div>
+           <div class="social-links">
+               <a href="https://youtube.com" target="_blank" rel="noopener"><img src="images/youtube.svg" alt="YouTube"></a>
+               <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/twitter.svg" alt="Twitter"></a>
+               <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+           </div>
+           <div class="footer-col project-details">
+               <p>WDD 231 Class Project</p>
+               <p>Kehinde Marvellous Kehinde</p>
+               <p>&copy; <span id="currentyear"></span> Timbuktu Chamber</p>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
