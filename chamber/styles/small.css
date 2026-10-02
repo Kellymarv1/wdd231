@@ -16,7 +16,7 @@ body {
 /* Header & Mobile Logo Contrast */
 header {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--accent-color);
 }
 
 .header-top {
@@ -30,7 +30,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.7rem;
-  color: white; /* Ensures high contrast on dark mobile header */
+  color: var(--accent-color); /* Ensures high contrast on dark mobile header */
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 700;
@@ -45,7 +45,7 @@ header {
 .menu-button {
   background: none;
   border: none;
-  color: white;
+  color: var(--accent-color);
   font-size: 1.8rem;
   cursor: pointer;
 }
@@ -62,7 +62,7 @@ nav.open {
 }
 
 nav a {
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
   padding: 0.8rem 1rem;
   text-align: center;
@@ -99,7 +99,7 @@ main h1 {
 
 .view-btn {
   padding: 0.6rem 1.2rem;
-  background-color: white;
+  background-color: var(--accent-color);
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-family: inherit;
@@ -112,7 +112,7 @@ main h1 {
 .view-btn:hover,
 .view-btn.active {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--accent-color);
 }
 
 /* ==============================
@@ -125,7 +125,7 @@ main h1 {
 }
 
 #memberContainer.grid .member-card {
-  background-color: #ffffff;
+  background-color: var(--accent-color);
   border: 1px solid #cbd5dc;
   border-radius: 8px;
   padding: 1.5rem;
@@ -179,7 +179,7 @@ main h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--accent-color);
   border: 1px solid #cbd5dc;
   padding: 0.8rem 1rem;
   border-radius: 6px;
@@ -245,7 +245,7 @@ main h1 {
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(23, 50, 77, 0.85);
-  color: white;
+  color: var(--accent-color);
   padding: 1rem 1.5rem;
   text-align: center;
   border-radius: 6px;
@@ -256,7 +256,7 @@ main h1 {
 .hero-cta h1 {
   margin: 0 0 0.3rem;
   font-size: 1.2rem;
-  color: white;
+  color: var(--accent-color);
 }
 
 .hero-cta p {
@@ -267,7 +267,7 @@ main h1 {
 .cta-button {
   display: inline-block;
   background-color: var(--secondary-color);
-  color: white;
+  color: var(--accent-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
   font-weight: 600;
@@ -294,7 +294,7 @@ main h1 {
 }
 
 .card, section {
-  background-color: #ffffff;
+  background-color: var(--accent-color);
   border: 1px solid #cbd5dc;
   border-radius: 8px;
   padding: 1.5rem;
@@ -375,7 +375,7 @@ main h1 {
 ============================== */
 footer {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--accent-color);
   padding: 2rem 1rem;
   text-align: center;
   margin-top: 2rem;
@@ -392,14 +392,14 @@ footer {
 .footer-col p {
   margin: 0.3rem 0;
   font-size: 0.9rem;
-  color: white;
+  color: var(--accent-color);
 }
 
 .footer-col h2 {
   font-weight: 600;
   margin: 0.3rem 0;
   font-size: 0.9rem;
-  color: white;
+  color: var(--accent-color);
 }
 
 .social-links {

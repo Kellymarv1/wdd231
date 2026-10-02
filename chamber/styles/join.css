@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #17324d;
+  --secondary-color: #2e608f;
+  --accent-color: #f4f6f8;
+  --text-color: #222222;
+}
+
 .join-container {
    display: flex;
    flex-direction: column;
@@ -6,7 +13,7 @@
 }
 
 .join-form {
-   background-color: #ffffff;
+   background-color: var(--accent-color);
    border: 1px solid #cbd5dc;
    border-radius: 8px;
    padding: 1.5rem;
@@ -43,7 +50,7 @@
 
 .submit-btn {
    background-color: var(--secondary-color);
-   color: white;
+   color: var(--accent-color);
    border: none;
    padding: 0.75rem;
    font-size: 1rem;
@@ -63,7 +70,7 @@
 }
 
 .membership-card {
-   background-color: #ffffff;
+   background-color: var(--accent-color);
    border: 1px solid #cbd5dc;
    border-radius: 8px;
    padding: 1.5rem;
@@ -77,7 +84,7 @@
 
 .info-link {
    background-color: var(--primary-color);
-   color: white;
+   color: var(--accent-color);
    border: none;
    padding: 0.5rem 1rem;
    border-radius: 4px;
@@ -116,7 +123,7 @@ dialog::backdrop {
 
 .close-modal {
    background-color: var(--primary-color);
-   color: white;
+   color: var(--accent-color);
    border: none;
    padding: 0.4rem 0.8rem;
    border-radius: 4px;
