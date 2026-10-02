@@ -1,24 +1,24 @@
 .discover-main {
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .visitor-banner {
-   background-color: var(--primary-color);
-   color: var(--accent-color);
-   padding: 1rem;
-   text-align: center;
-   border-radius: 6px;
-   margin-bottom: 1.5rem;
-   font-weight: 500;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
-/* Small Screens (Stacked layout using named grid areas) */
+/* Small Screens */
 .discover-grid {
-   display: grid;
-   grid-template-columns: 1fr;
-   grid-template-areas:
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
        "card1"
        "card2"
        "card3"
@@ -27,7 +27,7 @@
        "card6"
        "card7"
        "card8";
-   gap: 1.5rem;
+  gap: 1.5rem;
 }
 
 .card-1 { grid-area: card1; }
@@ -40,86 +40,86 @@
 .card-8 { grid-area: card8; }
 
 .discover-grid section {
-   background-color: var(--accent-color);
-   border: 1px solid #cbd5dc;
-   border-radius: 8px;
-   padding: 1.2rem;
-   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-   display: flex;
-   flex-direction: column;
-   gap: 0.8rem;
+  background-color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px var(--shadow-light);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 .discover-grid h2 {
-   margin: 0;
-   font-size: 1.1rem;
-   color: var(--primary-color);
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--primary-color);
 }
 
 .discover-grid figure {
-   margin: 0;
-   overflow: hidden;
-   border-radius: 6px;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 6px;
 }
 
 .discover-grid img {
-   width: 100%;
-   height: auto;
-   object-fit: cover;
-   display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .discover-grid address {
-   font-style: normal;
-   font-weight: 600;
-   font-size: 0.85rem;
-   color: var(--secondary-color);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
 }
 
 .discover-grid p {
-   margin: 0;
-   font-size: 0.9rem;
+  margin: 0;
+  font-size: 0.9rem;
 }
 
 .discover-grid button {
-   background-color: var(--primary-color);
-   color: var(--accent-color);
-   border: none;
-   padding: 0.5rem 1rem;
-   border-radius: 4px;
-   cursor: pointer;
-   font-weight: 600;
-   align-self: flex-start;
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  align-self: flex-start;
 }
 
-/* Medium Screens (2-column layout) */
+/* Medium Screens*/
 @media screen and (min-width: 641px) and (max-width: 1024px) {
-   .discover-grid {
-       grid-template-columns: repeat(2, 1fr);
-       grid-template-areas:
+  .discover-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
            "card1 card2"
            "card3 card4"
            "card5 card6"
            "card7 card8";
-   }
+  }
 }
 
-/* Large Screens (3-column layout + Desktop Image Hover Effect) */
+
 @media screen and (min-width: 1025px) {
-   .discover-grid {
-       grid-template-columns: repeat(3, 1fr);
-       grid-template-areas:
+  .discover-grid {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas:
            "card1 card2 card3"
            "card4 card5 card3"
            "card6 card7 card8";
-   }
+  }
 
-   .discover-grid figure img {
-       transition: transform 0.4s ease, filter 0.4s ease;
-   }
+  .discover-grid figure img {
+      transition: transform 0.4s ease, filter 0.4s ease;
+  }
 
-   .discover-grid figure img:hover {
-       transform: scale(1.05);
-       filter: brightness(1.1) contrast(1.05);
-   }
+  .discover-grid figure img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1) contrast(1.05);
+  }
 }
