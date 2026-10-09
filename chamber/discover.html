@@ -24,7 +24,8 @@
    <link rel="stylesheet" href="styles/discover.css">
 
    <script src="scripts/navigation.js" defer></script>
-   <script src="scripts/discover.js" type="module" defer></script>
+   <script src="scripts/date.js" defer></script>
+   <script src="scripts/discover.js" defer></script>
 </head>
 <body>
    <header>
@@ -33,7 +34,7 @@
                <img src="images/logo.svg" alt="Chamber Logo">
                <span>Timbuktu Chamber</span>
            </a>
-           <button class="menu-button">☰</button>
+           <button class="menu-button" aria-label="Open navigation menu">☰</button>
        </div>
        <nav>
            <a href="index.html">Home</a>
@@ -45,12 +46,89 @@
 
    <main class="discover-main">
        <h1>Discover Timbuktu</h1>
-       
-       <!-- Visitor Message Area -->
        <div id="visitorMessage" class="visitor-banner"></div>
+       
+       <div class="discover-grid">
+           <section class="card-1">
+               <h2>Sankore Mosque</h2>
+               <figure>
+                   <img src="images/sankore.webp" alt="Sankore Mosque" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Sankore Quarter, Timbuktu</address>
+               <p>A historic center of learning and one of the three ancient mosques comprising the University of Timbuktu.</p>
+               <button type="button">Learn More</button>
+           </section>
 
-       <!-- Dynamic Grid Container -->
-       <div id="discoverGrid" class="discover-grid"></div>
+           <section class="card-2">
+               <h2>Djinguereber Mosque</h2>
+               <figure>
+                   <img src="images/djinguereber.webp" alt="Djinguereber Mosque" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Badjindé, Timbuktu</address>
+               <p>An iconic 14th-century earthen mudbrick architecture masterpiece designed by Abu Es Haq al-Sahheli.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-3">
+               <h2>Ahmed Baba Institute</h2>
+               <figure>
+                   <img src="images/ahmed-baba.webp" alt="Ahmed Baba Institute" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Abaradjou, Timbuktu</address>
+               <p>A major research center housing thousands of priceless medieval manuscripts on science, astronomy, and law.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-4">
+               <h2>Timbuktu Desert Dunes</h2>
+               <figure>
+                   <img src="images/dunes.webp" alt="Timbuktu Desert Dunes" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Northern Outskirts, Timbuktu</address>
+               <p>Breathtaking shifting sahara sand dunes offering magnificent sunset views and camel trekking experiences.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-5">
+               <h2>The Sidi Yahya Mosque</h2>
+               <figure>
+                   <img src="images/sidi-yahya.webp" alt="The Sidi Yahya Mosque" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Sidi Yahya Quarter, Timbuktu</address>
+               <p>Legendary mosque containing a sacred tomb whose mythical doors are said not to open until the end times.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-6">
+               <h2>Timbuktu Open Market</h2>
+               <figure>
+                   <img src="images/market.webp" alt="Timbuktu Open Market" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Central Bazaar, Timbuktu</address>
+               <p>A vibrant traditional marketplace where local artisans trade traditional crafts, spices, and leather goods.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-7">
+               <h2>The Flame of Peace</h2>
+               <figure>
+                   <img src="images/flame.webp" alt="The Flame of Peace" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Independence Square, Timbuktu</address>
+               <p>A historic monument erected to commemorate the permanent end of the 1990s Tuareg rebellion.</p>
+               <button type="button">Learn More</button>
+           </section>
+
+           <section class="card-8">
+               <h2>Traditional Salt Caravans</h2>
+               <figure>
+                   <img src="images/caravan.webp" alt="Traditional Salt Caravans" loading="lazy" width="300" height="200">
+               </figure>
+               <address>Azalai Route, Timbuktu</address>
+               <p>The legendary arrival point of desert salt caravans traveling thousands of miles from Taoudenni mines.</p>
+               <button type="button">Learn More</button>
+           </section>
+       </div>
    </main>
 
    <footer>
