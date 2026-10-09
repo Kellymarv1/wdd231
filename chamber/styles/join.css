@@ -1,10 +1,3 @@
-:root {
-  --accent-color: #f4f6f8;
-  --border-color: #cbd5dc;
-  --shadow-dialog: rgba(0, 0, 0, 0.2);
-  --shadow-backdrop: rgba(0, 0, 0, 0.5);
-}
-
 .join-container {
   display: flex;
   flex-direction: column;
