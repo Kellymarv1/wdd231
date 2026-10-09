@@ -1,0 +1,48 @@
+/* ==========================================
+  SAFE HAVEN ANIMAL SHELTER - DESKTOP STYLES
+  ================================---------- */
+
+@media screen and (min-width: 768px) {
+   /* Hide mobile hamburger button */
+   #menu-button {
+       display: none;
+   }
+
+   /* Show horizontal navigation */
+   nav {
+       display: block !important;
+       width: auto;
+   }
+
+   .nav-links {
+       flex-direction: row;
+       margin: 0;
+       gap: 20px;
+   }
+
+   /* Hero adjustments */
+   .hero {
+       padding: 4rem 2rem;
+   }
+
+   .hero h2 {
+       font-size: 2.3rem;
+   }
+
+   /* Side-by-side grids */
+   .mission-grid {
+       flex-direction: row;
+   }
+
+   .mission-grid .card {
+       flex: 1;
+   }
+
+   .featured-grid {
+       flex-direction: row;
+   }
+
+   .pet-card {
+       flex: 1;
+   }
+}

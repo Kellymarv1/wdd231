@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Safe Haven Animal Shelter - Home</title>
+   <meta name="description" content="Welcome to Safe Haven Animal Shelter. Find your new furry best friend, learn about our adoption process, or sign up to volunteer today!">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+   
+   <!-- Open Graph Social Sharing Metadata -->
+   <meta property="og:title" content="Safe Haven Animal Shelter">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="images/hero-shelter.jpg">
+   <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/index.html">
+
+   <!-- Favicon -->
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+   <!-- CSS Stylesheets -->
+   <link rel="stylesheet" href="styles/small.css">
+   <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+   <header>
+       <div class="header-container">
+           <div class="logo">
+               <span class="logo-icon">🐾</span>
+               <h1>Safe Haven</h1>
+           </div>
+           <!-- Hamburger Button for Mobile -->
+           <button id="menu-button" aria-label="Open Navigation Menu">&#9776;</button>
+           <nav id="nav-bar">
+               <ul class="nav-links">
+                   <li><a href="index.html" class="active">Home</a></li>
+                   <li><a href="pets.html">Available Pets</a></li>
+                   <li><a href="volunteer.html">Volunteer &amp; Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+   <main>
+       <!-- Hero Section -->
+       <section class="hero">
+           <div class="hero-content">
+               <h2>Give Them a Second Chance at Happiness</h2>
+               <p>Welcome to Safe Haven Animal Shelter. We rescue, rehabilitate, and rehome vulnerable pets, connecting them with loving families in our community.</p>
+               <a href="pets.html" class="btn-primary">Meet Our Pets</a>
+           </div>
+       </section>
+
+       <!-- Mission & Quick Info Section -->
+       <section class="mission-grid">
+           <div class="card">
+               <h3>Our Mission</h3>
+               <p>We believe every animal deserves a safe environment, proper medical care, and a family that cherishes them. Our shelter works tirelessly to match each rescue pet with the right home.</p>
+           </div>
+           <div class="card">
+               <h3>Shelter Hours</h3>
+               <p><strong>Monday – Friday:</strong> 10:00 AM – 6:00 PM<br>
+               <strong>Saturday:</strong> 10:00 AM – 4:00 PM<br>
+               <strong>Sunday:</strong> Closed (Adoptions by Appointment)</p>
+           </div>
+       </section>
+
+       <!-- Featured Pets Preview Section -->
+       <section class="featured-section">
+           <h3>Featured Rescue Pets</h3>
+           <div class="featured-grid">
+               <div class="pet-card">
+                   <img src="images/placeholder-dog.jpg" alt="Rescue dog looking happy" loading="lazy" width="300" height="200">
+                   <h4>Max</h4>
+                   <p>Friendly 2-year-old Lab Mix looking for an active family.</p>
+               </div>
+               <div class="pet-card">
+                   <img src="images/placeholder-cat.jpg" alt="Rescue cat resting comfortably" loading="lazy" width="300" height="200">
+                   <h4>Luna</h4>
+                   <p>Gentle 3-year-old Calico who loves sunny windowsills.</p>
+               </div>
+           </div>
+       </section>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <p>&copy; 2026 Safe Haven Animal Shelter | All Rights Reserved</p>
+           <p>
+               <a href="attributions.html">Image &amp; Resource Attributions</a> | 
+               <a href="https://youtube.com" target="_blank">Video Demonstration</a>
+           </p>
+       </div>
+   </footer>
+
+   <!-- JavaScript Module -->
+   <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

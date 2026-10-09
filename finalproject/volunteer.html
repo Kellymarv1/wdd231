@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Safe Haven Animal Shelter - Volunteer &amp; Contact</title>
+   <meta name="description" content="Get in touch with Safe Haven Animal Shelter or sign up to become a volunteer. We'd love to hear from you!">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+
+   <meta property="og:title" content="Volunteer & Contact - Safe Haven Animal Shelter">
+   <meta property="og:type" content="website">
+   <meta property="og:image" content="images/hero-shelter.jpg">
+   <meta property="og:url" content="https://yourusername.github.io/wdd231/finalproject/volunteer.html">
+
+   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="styles/small.css">
+   <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+</head>
+<body>
+   <header>
+       <div class="header-container">
+           <div class="logo">
+               <span class="logo-icon">🐾</span>
+               <h1>Safe Haven</h1>
+           </div>
+           <button id="menu-button" aria-label="Toggle Menu">&#9776;</button>
+           <nav id="nav-bar">
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="pets.html">Available Pets</a></li>
+                   <li><a href="volunteer.html" class="active">Volunteer &amp; Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+   <main>
+       <section class="form-section">
+           <h2>Join Our Volunteer Team or Send a Inquiry</h2>
+           <p id="welcome-message">Fill out the form below to get involved with our shelter.</p>
+
+           <!-- HTML Form submitting to success.html using GET method to display parameters -->
+           <form action="success.html" method="get" class="volunteer-form" id="contact-form">
+               <fieldset>
+                   <legend>Contact Information</legend>
+                   
+                   <label for="fullname">Full Name:</label>
+                   <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe">
+
+                   <label for="email">Email Address:</label>
+                   <input type="email" id="email" name="email" required placeholder="jane@example.com">
+
+                   <label for="phone">Phone Number:</label>
+                   <input type="tel" id="phone" name="phone" placeholder="555-123-4567">
+               </fieldset>
+
+               <fieldset>
+                   <legend>Volunteer Interests</legend>
+                   
+                   <label for="role">Preferred Role:</label>
+                   <select id="role" name="role">
+                       <option value="dog-walker">Dog Walker</option>
+                       <option value="cat-socializer">Cat Socializer</option>
+                       <option value="adoption-assistant">Adoption Desk Assistant</option>
+                       <option value="general-help">General Shelter Maintenance</option>
+                   </select>
+
+                   <label for="comments">Message or Questions:</label>
+                   <textarea id="comments" name="comments" rows="4" placeholder="Tell us a little about your experience with animals..."></textarea>
+               </fieldset>
+
+               <button type="submit" class="btn-primary">Submit Application</button>
+           </form>
+       </section>
+   </main>
+
+   <footer>
+       <div class="footer-content">
+           <p>&copy; 2026 Safe Haven Animal Shelter | All Rights Reserved</p>
+           <p>
+               <a href="attributions.html">Image &amp; Resource Attributions</a> | 
+               <a href="https://youtube.com" target="_blank">Video Demonstration</a>
+           </p>
+       </div>
+   </footer>
+
+   <!-- Local Storage Script -->
+   <script type="module" src="scripts/volunteer.js"></script>
+</body>
+</html>

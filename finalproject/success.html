@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Submission Successful - Safe Haven Animal Shelter</title>
+   <meta name="description" content="Thank you for submitting your form to Safe Haven Animal Shelter.">
+   <meta name="author" content="Kehinde Marvellous Kehinde">
+
+   <link rel="stylesheet" href="styles/small.css">
+</head>
+<body>
+   <header>
+       <div class="header-container">
+           <div class="logo">
+               <span class="logo-icon">🐾</span>
+               <h1>Safe Haven</h1>
+           </div>
+           <nav id="nav-bar">
+               <ul class="nav-links">
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="pets.html">Available Pets</a></li>
+                   <li><a href="volunteer.html">Volunteer &amp; Contact</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+   <main class="success-main">
+       <section class="card success-card">
+           <h2>Thank You for Reaching Out!</h2>
+           <p>We have received your submission details below:</p>
+           
+           <div id="results-container" class="results-box">
+               <!-- JS will inject submitted data here -->
+           </div>
+
+           <br>
+           <a href="index.html" class="btn-primary">Return to Home</a>
+       </section>
+   </main>
+
+   <footer>
+       <p>&copy; 2026 Safe Haven Animal Shelter</p>
+   </footer>
+
+   <!-- Script to parse URL query parameters -->
+   <script>
+       const resultsContainer = document.querySelector('#results-container');
+       const urlParams = new URLSearchParams(window.location.search);
+
+       if(urlParams.toString() === "") {
+           resultsContainer.innerHTML = "<p>No form data was found.</p>";
+       } else {
+           let output = "<ul>";
+           for (const [key, value] of urlParams.entries()) {
+               // Clean up key names for display
+               const cleanKey = key.charAt(0).toUpperCase() + key.slice(1);
+               output += `<li><strong>${cleanKey}:</strong> ${decodeURIComponent(value)}</li>`;
+           }
+           output += "</ul>";
+           resultsContainer.innerHTML = output;
+       }
+   </script>
+</body>
+</html>
