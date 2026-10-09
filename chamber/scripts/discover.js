@@ -1,26 +1,4 @@
-import { items } from '../data/items.mjs';
-
-// 1. Dynamically render the 8 cards
-const discoverGrid = document.querySelector('#discoverGrid');
-
-if (discoverGrid) {
-   items.forEach((item, index) => {
-       const card = document.createElement('section');
-       card.classList.add(`card-${index + 1}`);
-       card.innerHTML = `
-           <h2>${item.name}</h2>
-           <figure>
-               <img src="${item.image}" alt="${item.name}" loading="lazy" width="300" height="200">
-           </figure>
-           <address>${item.address}</address>
-           <p>${item.description}</p>
-           <button type="button">Learn More</button>
-       `;
-       discoverGrid.appendChild(card);
-   });
-}
-
-// 2. LocalStorage Visitor Message Logic
+// LocalStorage Visitor Message Logic
 const visitorMsg = document.querySelector('#visitorMessage');
 
 if (visitorMsg) {
