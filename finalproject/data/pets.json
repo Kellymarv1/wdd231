@@ -1,17 +1,18 @@
 [
-   { "id": 1, "name": "Max", "type": "dog", "age": "2 years", "breed": "Labrador Mix", "gender": "Male", "description": "High energy and loves playing catch in the yard.", "image": "images/placeholder-dog.jpg" },
-   { "id": 2, "name": "Luna", "type": "cat", "age": "3 years", "breed": "Calico", "gender": "Female", "description": "Super affectionate and loves a good window spot.", "image": "images/placeholder-cat.jpg" },
-   { "id": 3, "name": "Rocky", "type": "dog", "age": "4 years", "breed": "German Shepherd", "gender": "Male", "description": "Loyal, protective, and knows basic obedience commands.", "image": "images/placeholder-dog.jpg" },
-   { "id": 4, "name": "Bella", "type": "cat", "age": "1 year", "breed": "Domestic Shorthair", "gender": "Female", "description": "Playful kitten who gets along with other cats.", "image": "images/placeholder-cat.jpg" },
-   { "id": 5, "name": "Charlie", "type": "dog", "age": "5 months", "breed": "Golden Retriever Pup", "gender": "Male", "description": "Still learning house rules, very sweet temperament.", "image": "images/placeholder-dog.jpg" },
-   { "id": 6, "name": "Lucy", "type": "cat", "age": "5 years", "breed": "Siamese Mix", "gender": "Female", "description": "Quiet companion who enjoys peaceful environments.", "image": "images/placeholder-cat.jpg" },
-   { "id": 7, "name": "Cooper", "type": "dog", "age": "3 years", "breed": "Beagle", "gender": "Male", "description": "Curious explorer with a great nose for trail walks.", "image": "images/placeholder-dog.jpg" },
-   { "id": 8, "name": "Daisy", "type": "cat", "age": "2 years", "breed": "Tabby", "gender": "Female", "description": "Active hunter of feather toys and laser pointers.", "image": "images/placeholder-cat.jpg" },
-   { "id": 9, "name": "Milo", "type": "dog", "age": "1.5 years", "breed": "Boxer Mix", "gender": "Male", "description": "Goofy personality and great with older children.", "image": "images/placeholder-dog.jpg" },
-   { "id": 10, "name": "Oliver", "type": "cat", "age": "4 years", "breed": "Tuxedo", "gender": "Male", "description": "Dapper gentleman who welcomes belly rubs.", "image": "images/placeholder-cat.jpg" },
-   { "id": 11, "name": "Sadie", "type": "dog", "age": "6 years", "breed": "Cocker Spaniel", "gender": "Female", "description": "Calm senior dog looking for a cozy couch to retire on.", "image": "images/placeholder-dog.jpg" },
-   { "id": 12, "name": "Chloe", "type": "cat", "age": "6 months", "breed": "Main Coon Mix", "gender": "Female", "description": "Fluffy ball of energy with giant paws.", "image": "images/placeholder-cat.jpg" },
-   { "id": 13, "name": "Duke", "type": "dog", "age": "3 years", "breed": "Pit Bull Mix", "gender": "Male", "description": "Gentle giant who loves cuddling on the rug.", "image": "images/placeholder-dog.jpg" },
-   { "id": 14, "name": "Zoe", "type": "cat", "age": "2.5 years", "breed": "Tortoiseshell", "gender": "Female", "description": "Independent feline with a very striking coat pattern.", "image": "images/placeholder-cat.jpg" },
-   { "id": 15, "name": "Bailey", "type": "dog", "age": "2 years", "breed": "Australian Shepherd", "gender": "Female", "description": "Smart, agile, and ready for hiking adventures.", "image": "images/placeholder-dog.jpg" }
+   { "id": 1, "name": "Max", "type": "dog", "age": "2 years", "breed": "Labrador Mix", "gender": "Male", "description": "High energy and loves playing catch in the yard.", "image": "images/dog-1.jpg" },
+   { "id": 2, "name": "Luna", "type": "cat", "age": "3 years", "breed": "Calico", "gender": "Female", "description": "Super affectionate and loves a good window spot.", "image": "images/cat-1.jpg" },
+   { "id": 3, "name": "Rocky", "type": "dog", "age": "4 years", "breed": "German Shepherd", "gender": "Male", "description": "Loyal, protective, and knows basic obedience commands.", "image": "images/dog-2.jpg" },
+   { "id": 4, "name": "Bella", "type": "cat", "age": "1 year", "breed": "Domestic Shorthair", "gender": "Female", "description": "Playful kitten who gets along with other cats.", "image": "images/cat-2.jpg" },
+   { "id": 5, "name": "Charlie", "type": "dog", "age": "5 months", "breed": "Golden Retriever Pup", "gender": "Male", "description": "Still learning house rules, very sweet temperament.", "image": "images/dog-3.jpg" },
+   { "id": 6, "name": "Lucy", "type": "cat", "age": "5 years", "breed": "Siamese Mix", "gender": "Female", "description": "Quiet companion who enjoys peaceful environments.", "image": "images/cat-3.jpg" },
+
+   { "id": 7, "name": "Cooper", "type": "dog", "age": "3 years", "breed": "Beagle", "gender": "Male", "description": "Curious explorer with a great nose for trail walks.", "image": "images/dog-4.jpg" },
+   { "id": 8, "name": "Daisy", "type": "cat", "age": "2 years", "breed": "Tabby", "gender": "Female", "description": "Active hunter of feather toys and laser pointers.", "image": "images/cat-4.jpg" },
+   { "id": 9, "name": "Milo", "type": "dog", "age": "1.5 years", "breed": "Boxer Mix", "gender": "Male", "description": "Goofy personality and great with older children.", "image": "images/dog-5.jpg" },
+   { "id": 10, "name": "Oliver", "type": "cat", "age": "4 years", "breed": "Tuxedo", "gender": "Male", "description": "Dapper gentleman who welcomes belly rubs.", "image": "images/cat-5.jpg" },
+   { "id": 11, "name": "Sadie", "type": "dog", "age": "6 years", "breed": "Cocker Spaniel", "gender": "Female", "description": "Calm senior dog looking for a cozy couch to retire on.", "image": "images/dog-6.jpg" },
+   { "id": 12, "name": "Chloe", "type": "cat", "age": "6 months", "breed": "Main Coon Mix", "gender": "Female", "description": "Fluffy ball of energy with giant paws.", "image": "images/cat-6.jpg" },
+   { "id": 13, "name": "Duke", "type": "dog", "age": "3 years", "breed": "Pit Bull Mix", "gender": "Male", "description": "Gentle giant who loves cuddling on the rug.", "image": "images/dog-7.jpg" },
+   { "id": 14, "name": "Zoe", "type": "cat", "age": "2.5 years", "breed": "Tortoiseshell", "gender": "Female", "description": "Independent feline with a very striking coat pattern.", "image": "images/cat-7.jpg" },
+   { "id": 15, "name": "Bailey", "type": "dog", "age": "2 years", "breed": "Australian Shepherd", "gender": "Female", "description": "Smart, agile, and ready for hiking adventures.", "image": "images/dog-8.jpg" }
 ]
