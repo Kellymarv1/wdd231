@@ -97,14 +97,15 @@ main {
    padding: 1.5rem;
 }
 
-/* Ensure standard main headings/paragraphs always have dark contrast */
 main h2, main h3, main h4, main p {
    color: var(--text-color);
 }
 
-/* Hero Banner (Dark background, so text must be white) */
 .hero {
-   background: linear-gradient(rgba(46, 111, 127, 0.85), rgba(43, 45, 66, 0.85)), url('https://kellymarv1.github.io/wdd231/finalproject/index.html/images/hero-shelter.jpg') center/cover;
+   background-color: #2E6F7F;
+   background-image: linear-gradient(rgba(46, 111, 127, 0.85), rgba(43, 45, 66, 0.85)), url('../images/hero-shelter.jpg');
+   background-position: center;
+   background-size: cover;
    color: #FFFFFF;
    padding: 3rem 1.5rem;
    border-radius: 8px;
