@@ -4,7 +4,7 @@
 
 :root {
    --primary-color: #2E6F7F;   /* Warm Teal */
-   --accent-color: #9B3317;    /* Darkened Soft Coral (Passes contrast with white text) */
+   --accent-color: #9B3317;    /* Darkened Soft Coral */
    --bg-color: #F9F8F6;        /* Off-White */
    --text-color: #2B2D42;      /* Charcoal Text */
    --card-bg: #FFFFFF;
@@ -26,7 +26,7 @@ header {
    padding: 1rem;
 }
 
-.header-container {
+.site-wrap {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -101,6 +101,7 @@ main h2, main h3, main h4, main p {
    color: var(--text-color);
 }
 
+/* Hero Banner */
 .hero {
    background-color: #2E6F7F;
    background-image: linear-gradient(rgba(46, 111, 127, 0.85), rgba(43, 45, 66, 0.85)), url('../images/hero-shelter.jpg');
@@ -117,7 +118,7 @@ main h2, main h3, main h4, main p {
    color: #FFFFFF;
 }
 
-.btn-primary {
+.action-btn {
    display: inline-block;
    background-color: var(--accent-color);
    color: #FFFFFF;
@@ -129,11 +130,11 @@ main h2, main h3, main h4, main p {
    transition: background 0.3s;
 }
 
-.btn-primary:hover {
+.action-btn:hover {
    background-color: #802912;
 }
 
-/* Cards & Grids */
+/* Grids & Shelter Boxes */
 .mission-grid, .featured-grid {
    display: flex;
    flex-direction: column;
@@ -141,26 +142,26 @@ main h2, main h3, main h4, main p {
    margin-bottom: 2rem;
 }
 
-.card, .pet-card {
+.shelter-box, .animal-card {
    background: var(--card-bg);
    padding: 1.5rem;
    border-radius: 8px;
    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-.card h3, .featured-section h3 {
+.shelter-box h3, .featured-section h3 {
    font-family: 'Poppins', sans-serif;
    color: var(--primary-color);
    margin-top: 0;
 }
 
-.pet-card img {
+.animal-card img {
    width: 100%;
    height: auto;
    border-radius: 6px;
 }
 
-.pet-card h4 {
+.animal-card h4 {
    margin: 10px 0 5px 0;
    font-family: 'Poppins', sans-serif;
    color: var(--text-color);
@@ -221,7 +222,7 @@ footer {
 }
 
 footer a {
-   color: #f0a595; /* Lighter coral for high contrast in footer */
+   color: #f0a595;
    text-decoration: none;
 }
 
